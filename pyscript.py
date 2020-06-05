@@ -6,3 +6,7 @@ def consolelog(text):
 def setTimeout(milliseconds):
     milliseconds = milliseconds/1000 
     time.sleep(milliseconds)
+
+def function(name, code):
+    def name():
+        code
