@@ -1,0 +1,8 @@
+import time
+
+def consolelog(text):
+    print(text)
+
+def setTimeout(milliseconds):
+    milliseconds = milliseconds/1000 
+    time.sleep(milliseconds)
