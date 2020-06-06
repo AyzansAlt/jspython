@@ -14,3 +14,6 @@ def function(name, code):
 def alert(text):
     print("\n\n\n_____________________" + text + "\n\n\n______________________")
 
+def var(name, value):
+    global name
+    name = value
