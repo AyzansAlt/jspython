@@ -1,7 +1,7 @@
-import pyscript as pys
+import jspython as jsp
 
-pys.function("testFunction",
-    pys.consolelog("Hello, world!")
+jsp.function("testFunction",
+    jsp.consolelog("Hello, world!")
 );
 
 "testFunction"(); #Sorry about the quotation marks... :/
