@@ -1,3 +1,7 @@
-import pyscript
+import pyscript as pys
 
-pyscript.consolelog("di")
+pys.function("testFunction",
+    pys.consolelog("Hello, world!")
+);
+
+"testFunction"(); #Sorry about the quotation marks... :/

@@ -6,9 +6,9 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     name="pyscript-pkg-vectr0", # Replace with your own username
     version="0.0.1",
-    author="Vectr0",
-    author_email="ayzan@netriza.ml",
-    description="A small package",
+    author="Vectr0 (Ayzan, VectorEngine)",
+    author_email="ayzan@netriza.ml / ayzan@netriza.me",
+    description="Python, but JavaScript",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/netriza/pyscript",

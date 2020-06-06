@@ -1,4 +1,4 @@
-def setup():
+def setup(domain):
     import os
 
     print("installing modules...")
@@ -15,7 +15,8 @@ def setup():
         os.system(i)
 
     print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLogin:")
-    os.system("python3 -m twine upload --repository testpypi dist/*")
+    os.system("python3 -m twine upload --repository " + domain + " dist/*")
 
-input("[ENTER]")
-setup()
+uploader = input("> (testpypi, pypi) ")
+input("[ENTER]") 
+setup(uploader)
