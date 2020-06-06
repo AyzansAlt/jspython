@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="jspython", # Replace with your own username
-    version="0.0.3",
+    version="1.0.1",
     author="Vectr0",
     author_email="ayzan@netriza.ml",
     description="Python, but JavaScript",

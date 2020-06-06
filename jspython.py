@@ -10,3 +10,7 @@ def setTimeout(milliseconds):
 def function(name, code):
     def name():
         code
+
+def alert(text):
+    print("\n\n\n_____________________" + text + "\n\n\n______________________")
+
