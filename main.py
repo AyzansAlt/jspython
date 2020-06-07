@@ -1,31 +1,20 @@
-import subprocess
-
-
 def setup(domain):
     import os
 
     print("installing modules...")
-    installs = [
-        "setuptools",
-        "twine",
-        "wheel"#,
-        # "python3 setup.py sdist bdist_wheel",
-        # username and api token required for installing
-        # so that users won't enter this repl and start
-        # messing up my files.
+    cmds = [
+        "pip install setuptools",
+        "pip install twine",
+        "pip install wheel",
+        "python3 setup.py sdist bdist_wheel",
     ]
-
-
-    for i in installs:
-        subprocess.Popen(['pip', 'install', i])
-    
-    
-    subprocess.Popen(['python3', 'setup.py', 'sdist', 'bdist_wheel'])
-
+    for i in cmds:
+        os.system(i)
 
     print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLogin:")
     os.system("python3 -m twine upload --repository " + domain + " dist/*")
+    # you will have to maually enter your username and password.
 
-uploader = input("> (testpypi, pypi) ")
-input("[ENTER]") 
+uploader = input("> (pypi or testpypi)")
+input("[ENTER]")
 setup(uploader)
